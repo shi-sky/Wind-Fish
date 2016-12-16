@@ -6,20 +6,46 @@ var named = require('vinyl-named');
 
 var app = "src";
 var appList = ['main', 'sub1', 'sub2'];
-gulp.task('default', function() {
 
+
+gulp.task('bundle', function() {
   return gulp.src(mapFiles(appList, 'js'))
     .pipe(named())
-    .pipe(webpack({
-      module: {
-        loaders: [
-          { test: /\.vue$/, loader: 'vue'}
-        ]
-      },
-       watch: true
-    }))
+    .pipe(webpack(getConfig()))
     .pipe(gulp.dest('dist/'));
 });
+
+gulp.task('watch', function() {
+  return gulp.src(mapFiles(appList, 'js'))
+    .pipe(named())
+    .pipe(webpack(getConfig({watch: true})))
+    .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('default', function() {
+
+
+});
+/**
+ * @private
+ */
+function getConfig(opt) {
+  var config = {
+    module: {
+      loaders: [
+        { test: /\.vue$/, loader: 'vue'}
+      ]
+    }
+  };
+  if (!opt) {
+    return config;
+  }
+  for (var i in opt) {
+    config[i] = opt;
+  }
+  return config;
+}
+
 /**
  * @private
  */
