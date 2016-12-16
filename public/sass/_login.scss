@@ -1,0 +1,124 @@
+/*
+    登陆开始
+ */
+.login_big_box {
+    margin: auto;
+}
+
+.login_banner {
+    float: left;
+    margin: 55px 0;
+}
+
+.login_banner_right {
+    width: 370px;
+    background-color: rgba(255,255,255,0.5);
+    margin: 65px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.login_banner_right h3 {
+    font-size: 20px;
+    font-family: microsoft yahei;
+    text-align: center;
+    color: #333;
+}
+
+.login_admin {
+    background-color: #fff;
+    background-image: url("../images/login_ad.png");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    width: 320px;
+    height: 50px;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    text-align: right;
+}
+
+.login_pas {
+    background-color: #fff;
+    background-image: url("../images/login_pas.png");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    width: 320px;
+    height: 50px;
+    border: 1px solid #ddd;
+    margin: auto;
+    text-align: right;
+}
+
+.login_admin input {
+    height: 48px;
+    line-height: 48px;
+    border: 0 none;
+    width: 270px;
+    font-size: 16px;
+    outline: medium;
+}
+
+.login_pas input {
+    height: 48px;
+    line-height: 48px;
+    border: 0 none;
+    width: 270px;
+    font-size: 16px;
+    outline: medium;
+}
+
+.pas_box {
+    width: 320px;
+    margin: 20px auto;
+    font-size: 14px;
+    overflow: hidden;
+    color: #666666;
+}
+
+.re_pas {
+    float: left;
+}
+
+.pas_box .re_pas label input{
+	position:relative;
+	top:1px;
+}
+
+.for_pas {
+    float: right;
+}
+
+.for_pas a {
+    color: #333;
+}
+
+.login_button {
+    width: 320px;
+    height: 52px;
+    background-color: #ff6600;
+    border: 0 none;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login_button:hover {
+    background-color: #E35B00;
+}
+
+.little_btn {
+    width: 320px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: right;
+    margin: 20px auto;
+}
+
+.little_btn a {
+    color: #666666;
+}
+/*
+    登陆结束
+ */

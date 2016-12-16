@@ -1,0 +1,45 @@
+/**记录集处理-各个模块下表的record；
+ */
+define({
+	//订单
+	WConsign:['custNo','etd','eta',
+				'polId','polCode','polEn','polCn',
+				'potId','potCode','potEn','potCn',
+				'podId','podCode','podEn','podCn',
+				'routeCode','routeName',
+				'receiptPlace','deliveryPlaceEn','deliveryPlaceCn',
+				'destinationPlaceEn','destinationPlaceCn',
+				'blTypeCode','blTypeName','issueTypeCode','issueTypeName',
+				'transTermCode','transTermName','freightTermCode','freightTermName',
+				'bookingAgencyId','bookingAgencyName','bookingAgencySname','bookingAgencyContact',
+				'containerCompanyId','containerCompanyName','containerCompanySname',
+				'serviceBookingFlag','serviceLoadFlag','serviceCustomsDeclFlag',
+				'serviceInspectionFlag','serviceCertificationFlag','serviceInsuranceFlag',
+				'serviceContainerInspectionFlag','serviceFumigationFlag','serviceExportAgencyFlag',
+				'serviceClearCustomsFlag','serviceSgsFlag',
+				'customerRequirement','bookingRemarks',
+				'shipper','consignee','notifyParty',
+				'cargoNum','cargoPackage','cargoGrossWeight','cargoVolumn','cargoMarks',
+				'cargoNameEn','cargoNameCn','cargoHscode','cargoTypeCode','cargoTypeName',
+				'cargoFrozenFlag','cargoDangerousFlag','containerInfo','vessName','voyage','transTermName',
+				'freightTermName','issueTypeName'],
+
+	//货物
+	WCargo:['cargoNum','cargoPackage','cargoGrossWeight','cargoMeasurement',
+			'cargoNameCn','cargoNameEn','cargoMarks','cargoHsCode'
+			],
+	//费用
+	WExpense:['charCode','charName','charNameEn','unitName','currCode','exRate','unitPrice','expeNum','expeAmount','expeTaxRate','expeTax','expeRemarks'],
+	//费用
+	FBl:['blNo','blShipper','blConsignee','blNotifyParty','blNotifyParty2',
+		'blPolEn','blPotEn','blPodEn','blReceiptPlace','blDeliveryPlace','blVessName','blVoyaName',
+		'blContainerNo','blTransTerm','blPaymentTerm','blIssueDate','blIssueBy','blIssuePlace','blOriginalNum',
+		'blCargoMarks','blCargoNameEn','blCargoHscode','blCargoNum','blCargoPackage','blCargoGrossWeight','blCargoMeasurement','blCargoPackagesInWord'
+	],
+	//用户
+	WUser:['wusrName','wusrPassword','wusrFirstName','wusrTitle','wusrDept','wusrMobile','wusrEmail','wusrFunctions'],
+	//节点订阅
+	CCustomerTask:['custId','taskId','taskCode','taskName','taskNameEn','custContact','custMobile','custEmail','smsFlag','smsFlag','emailFlag'],
+	//评论
+	CmsComments: ['artiId','userName','title','comments','commIp']
+});

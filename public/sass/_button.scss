@@ -1,0 +1,76 @@
+/**button**/
+.btn {
+    padding: 5px 9px;
+    color: #323232;
+    border: 1px #bdbdbd solid;
+    background-color: #f2f2f2;
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+    background-color: #CFCFCF;
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 0.65;
+}
+
+.btn.blue {
+    border: 1px #2185D0 solid;
+    background-color: #2185D0;
+    color: #fff;
+    text-align: center;
+    padding: 7px 10px;
+}
+
+.btn.blue.focus,
+.btn.blue:focus,
+.btn.blue:hover {
+    border: 1px #1678c2  solid;
+    background-color: #1678c2;
+}
+.btn.warning {
+    border: 1px #F60 solid;
+    background-color: #F60;
+    color: #fff;
+    text-align: center;
+    padding: 7px 10px;
+}
+
+.btn.warning.focus,
+.btn.warning:focus,
+.btn.warning:hover {
+    border: 1px #E35B00 solid;
+    background-color: #E35B00;
+}
+.ui.basic.bg.button{
+    background-color: #fff !important;
+}
+.ui.vmini.button{
+  padding:5px 8px;
+  font-size: 0.58571429rem
+}
+.ui.vmini.icon.button{
+    padding:5px;
+      font-size: 0.58571429rem;
+}
+.btn-shop{
+	width:80px;
+	height:25px;
+	border:1px solid #f60;
+	background-color:#fff;
+	border-radius: 3px;
+	color:#f60
+}
+.btn-shop:hover{
+	background-color:#f60;
+	color:#fff;
+}

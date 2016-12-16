@@ -1,0 +1,113 @@
+header {}
+
+.header_box {
+    line-height: 40px;
+    font-size: 13px;
+    background-color: #072c6b;
+    overflow: hidden;
+}
+
+.header_left a,
+.header_left span {
+    color: #f6f6f6;
+    margin-right: 5px;
+}
+
+.header_right a,
+.header_right span {
+    color: #f6f6f6;
+    margin-right: 15px;
+}
+
+.header_left a:hover {
+    color: #ff6600;
+}
+
+.header_right a:hover {
+    color: #ff6600;
+}
+
+a.help_center {
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 24px;
+    background: url("../images/help_center.png") left center no-repeat;
+}
+
+.header_left {
+    float: left;
+    color: #fff;
+}
+
+.header_right {
+    float: right;
+}
+/**-header nav-**/
+.header_nav {
+    height: 85px;
+    font-size: 14px;
+    line-height: 80px;
+    background-color: #3361b1;
+}
+
+.nav_left {
+    float: left;
+}
+
+.nav_left img {
+    vertical-align: middle;
+}
+
+.nav_right {
+    float: left;
+    margin-left: 40px;
+}
+
+.nav_right ul li {
+    border-radius: 4px;
+    transition: background-color 0.5s ease,color 0.5s ease;
+    display: inline;
+    line-height: 80px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.nav_right ul li:hover {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #314155;
+}
+
+.nav_right ul li:active {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #314155;
+}
+
+.nav_right ul li.active {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #314155;
+}
+/**--index header--*/
+.index_bg .header_nav {
+    font-size: 15px;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+.index_bg .nav_right {
+    float: right;
+}
+
+.index_bg .nav_right ul li {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.index_bg .nav_right ul li:hover {
+    background: transparent;
+    background: none;
+    border-radius: 0;
+    color: #fff;
+}

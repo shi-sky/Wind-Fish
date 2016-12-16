@@ -1,0 +1,111 @@
+/*
+    首页开始
+ */
+.slogan {
+    width: 303px;
+    height: 50px;
+    margin: 70px auto 50px;
+    background: url("../images/slogan.png") no-repeat scroll center center;
+}
+
+.index_search_box {
+    height: 270px;
+}
+
+.search {
+    width: 670px;
+    height: 45px;
+    margin: 0 auto;
+    background: inherit;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.index_search {
+    width: 670px;
+    height: 53px;
+    margin: 0 auto;
+    background: inherit;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 4px solid rgba(255,255,255,0.1);
+}
+
+.search_bg {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.search_pol {
+    float: left;
+    position: relative;
+}
+
+.search_pod {
+    float: left;
+    position: relative;
+}
+
+.search_pod span,
+.search_pol span {
+    float: left;
+    line-height: 45px !important;
+    margin-left: 15px;
+    color: #888888;
+    font-size: 16px;
+}
+
+.search_pol input {
+    height: 45px;
+    margin-left: 5px;
+    border: 0 none;
+    font-size: 16px;
+    line-height: 45px;
+    vertical-align: top;
+    padding-top: 2px;
+    color: #323232;
+    width: 170px;
+}
+
+.search_pol input:focus {
+    outline: none;
+}
+
+.search_pod input {
+    height: 45px;
+    margin-left: 5px;
+    border: 0 none;
+    font-size: 16px;
+    line-height: 40px;
+    vertical-align: top;
+    padding-top: 2px;
+    color: #323232;
+    width: 240px;
+}
+
+.search_pod input:focus {
+    outline: none;
+}
+
+.search_button {
+    width: 100.9px;
+    height: 45px;
+    background-color: #F60;
+    float: right;
+    border: 0 none;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    cursor: pointer;
+}
+
+.search_button:hover {
+    background-color: #E35B00;
+}
+/*
+    首页结束
+ */

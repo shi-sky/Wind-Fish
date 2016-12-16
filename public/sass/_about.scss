@@ -1,0 +1,72 @@
+/* about 关于我么 */
+.banner-abuot {
+	background: url("../images/activity/banner-about.jpg") no-repeat center center;
+	height: 140px;
+}
+
+.ht-about {
+	padding: 20px 120px;
+
+	h4 {
+		font-size: 18px;
+	}
+}
+
+.ht-about.about-us p {
+	text-indent: 2em;
+	line-height: 20px;
+	text-align: justify;
+}
+
+.timer-shaft {
+	background: none repeat scroll 0 0 #fcfcfc;
+	border: 1px solid #dcdcdc;
+	padding: 20px;
+}
+
+.timer-shaft ul {
+	clear: both;
+	padding: 0;
+}
+
+.timer-shaft li {
+	color: #c1c1c3;
+	line-height: 32px;
+	list-style: outside none disc;
+	margin-left: 28px;
+	position: relative;
+}
+
+.timer-shaft li a {
+	font-size: 14px;
+	color: #373737;
+}
+
+.timer-right > ul {
+	list-style: outside none none;
+}
+
+.timer-right li {
+	margin-top: 10px;
+}
+
+.timer-right img {
+	width: 240px;
+}
+.contact{
+	overflow:hidden;
+	
+	.mes{
+		float:left;
+		margin-top:35px;
+	}
+	
+	.map{
+		float:left;
+		margin-left:90px;
+	}
+
+}
+/**百度地图**/
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}

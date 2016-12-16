@@ -1,0 +1,393 @@
+/*news 资讯信息 */
+.news-body {}
+
+.news-nav {
+	margin-bottom: 20px;
+
+	li {
+		color: #656565;
+		padding: 8px 25px;
+		float: left;
+		font-size: 14px;
+		cursor: pointer;
+		border-bottom: 3px solid #ddd;
+
+	}
+
+	li:hover {
+		color: #F60;
+		border-bottom: 3px solid #F60;
+	}
+
+	li.active {
+		color: #F60;
+		border-bottom: 3px solid #F60;
+	}
+}
+
+.news-left {
+	float: left;
+	width: 900px;
+}
+
+.news-right {
+	float: right;
+	width: 240px;
+	border: 1px solid #ddd;
+	height: 510px;
+	border-top: 2px solid #F60;
+
+	h5 {
+		overflow: hidden;
+		font-size: 14px;
+		padding: 10px;
+		font-weight: 700;
+		background-color: #f5f5f5;
+		margin: 0;
+		border-bottom: 1px solid #ddd;
+	}
+
+	ul {
+		padding:0 10px;
+
+		li {
+			overflow: hidden;
+			cursor: pointer;
+			border-bottom: 1px dashed #ddd;
+			padding: 10px 0;
+
+			p {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				width: 170px;
+				margin: 0;
+				margin-left:10px;
+				line-height: 25px;
+			}
+
+			span {
+				font-size: 12px;
+				color: #A5A5A5;
+			}
+
+			a {
+				color:#666;
+				&:hover{
+						color: #F60;
+				}
+			}
+		}
+	}
+}
+
+.news-card {
+	.image > img {
+		height: 225px!important;
+	}
+	.title {
+		line-height: 50px;
+		position: absolute;
+		width:100%;
+		top: 0;
+		a{
+			font-size: 16px;
+			color: #fff;
+			position: absolute;
+			width:100%;
+			padding: 0 10px;
+			top: 0;
+			span {
+				display: block;
+				font-size: 12px;
+			}
+		}
+	}
+
+	.title-bg {
+		background-color: #323232;
+		filter:alpha(opacity=50);
+		-moz-opacity: 0.5;
+		-khtml-opacity: 0.5;
+		opacity: 0.5;
+		height: 50px;
+	}
+
+	.content {
+		>a{
+		}
+		h4 {
+			font-size: 13px;
+			font-weight: bold;
+			width: 150px;
+				height: 33px;
+				margin: 0;
+			color: #606d80;
+			float: left;
+			overflow: hidden;
+			line-height: 33px;
+			text-overflow: ellipsis;
+		}
+		span {
+			display: block;
+			float: right;
+			color: #999;
+			height: 33px;
+			line-height: 33px;
+			font-size: 13px;
+			color: #999;
+		}
+		p {
+			font-family: "宋体";
+			font-size: 12px;
+			font-weight: 500;
+			text-overflow: ellipsis;
+			line-height: 20px;
+			color: #323232;
+			overflow: hidden;
+			height: 60px;
+		}
+
+	}
+
+
+}
+
+.news-item {
+	width: 32%;
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	&:hover {
+		-webkit-box-shadow: 0 0 5px #aaa;
+		-moz-box-shadow: 0 0 5px #aaa;
+		box-shadow: 0 0 5px #aaa;
+	}
+}
+.news-img {
+	background-color: #eee;
+	width: 100%;
+	position: relative;
+	>img{
+		width: 100%;
+		height: 250px;
+	}
+}
+.news-title{
+	line-height: 50px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	>a{
+		font-size: 16px;
+		color: #fff;
+		width: 100%;
+		padding: 0 10px;
+		z-index: 10;
+		position: absolute;
+		top: 0;
+	}
+}
+.title-bg {
+	background-color: #323232;
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	width: 100%;
+	height: 50px;
+
+}
+.news-content{
+	ul {
+		li {
+			overflow: hidden;
+			border-bottom: 1px dashed #ddd;
+			> a {
+				color: #3361b1;
+				padding:4px;
+				cursor: pointer;
+				display: block;
+				width: 100%;
+				line-height: 33px;
+				&:hover {
+					background-color: #f4f9fc;
+						color: #F60;
+				}
+				&:after{
+					content: "";
+				 display: table;
+				 clear: both;
+				}
+
+				h4 {
+					font-size: 12px;
+					float: left;
+					margin: 0;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					width: 70%;
+					color: #999;
+					line-height: 33px;
+				}
+				> span {
+					display: block;
+					float: right;
+					color: #999;
+					font-size: 12px;
+					color: #999;
+				}
+			}
+
+			&.first {
+
+				h4 {
+					font-size: 14px;
+					font-weight: bold;
+					color: #606d80;
+				}
+
+				p {
+					padding: 0 4px;
+					font-family: "宋体";
+					font-size: 12px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					margin: 0;
+					line-height: 20px;
+					color: #666;
+					height: 80px;
+				}
+				>span{
+					float: right;
+					color: #999;
+					font-size: 12px;
+					margin-bottom: 10px;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/*news 资讯信息结束 */
+/*news 列表 */
+.news-list-box {
+	border: 1px solid #ccc;
+	margin:0 0 10px;
+
+	.news-list {
+		overflow: hidden;
+		padding: 10px;
+
+		.new-list-img {
+			float: left;
+			width: 23%;
+			height: 100px;
+			margin-right: 20px;
+			>img{
+				width: 100%;
+				height:100%;
+			}
+		}
+
+		.new-list-right {
+			float: left;
+			width: 73%;
+
+			.new-list-title {
+				overflow: hidden;
+
+				h5 {
+					float: left;
+					color: #606d80;
+				}
+
+				span {
+					float: right;
+					font-size: 13px;
+					color: #A5A5A5;
+				}
+			}
+
+			p {
+				color: #5F5F5F;
+				font-size: 12px;
+				height: 65px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+}
+
+.news-list-box:hover {
+	-webkit-box-shadow: 0 0 5px #aaa;
+	-moz-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+}
+/*news 列表结束 */
+
+/*积分商城开始 */
+.shop-box {
+	.left {
+		float: left;
+		width: 965px;
+
+		.shop-content {
+			border: 1px solid #ddd;
+			overflow: hidden;
+			padding: 7px;
+			background-color: #fbfbfb;
+			width: 310px;
+			float: left;
+			margin: 0 10px 10px 0;
+
+			.img {
+				width: 110px;
+				height: 110px;
+				float: left;
+
+				img {
+					border: 1px solid #eee;
+				}
+			}
+
+			.main {
+				float: left;
+				padding: 0 0 0 10px;
+
+				.title {
+					margin-bottom: 10px;
+					font-size: 16px;
+					color: #323232;
+				}
+
+				h5 {
+					margin: 5px 0;
+					padding: 0;
+					font-weight: 500;
+					color: #666;
+					font-size: 12px;
+				}
+
+				p {
+					margin: 10px 0;
+					font-size: 12px;
+
+					span {
+						font-weight: bold;
+						color: #f60;
+						font-size: 18px;
+						margin: 0 5px;
+					}
+				}
+			}
+		}
+	}
+}
+/*积分商城结束 */

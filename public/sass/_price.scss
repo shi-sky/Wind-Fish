@@ -1,0 +1,515 @@
+/*
+	运价开始
+ */
+.breadcrumb {
+	font-size: 14px;
+	color: #656565;
+	margin: 10px auto;
+	padding-left: 20px;
+	background-image: url("../images/freight_title_bg.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.freight_search {
+	padding: 20px 0;
+	background: #eff2f5;
+	border: 1px solid #e4e7ea;
+}
+
+.fright_message {
+	font-size: 16px;
+	margin-top: 20px;
+	padding: 10px 0;
+}
+
+.fright_message span {
+	margin: 0 5px;
+	color: #F60;
+}
+
+.freight_table {
+	width: 100%;
+	font-size: 14px;
+	border:0 !important;
+}
+
+.freight_table thead {
+	background-color: #6294d8;
+	color: #fff;
+}
+
+.freight_table thead th {
+	padding: 8px 0;
+}
+
+.freight_table tbody td {
+	text-align: center;
+	padding: 10px 0;
+	border:0 !important;
+}
+
+tbody td.feight_pol_pod {
+	text-align: left;
+	padding-left: 10px;
+}
+
+.price_color {
+	color: #ff6600;
+}
+
+.price_show {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+.tr_bg1 {
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.tr_bg2 {
+	background-color: #eaf0f9;
+	cursor: pointer;
+}
+/*
+	运价结束
+ */
+/*
+	成本核算
+ */
+.cost_top_box {
+	padding: 30px 40px 20px;
+	border: 1px solid #dedede;
+	overflow: hidden;
+}
+
+.cost_pol_pod {
+	float: left;
+	font-size: 16px;
+	width: 390px;
+}
+
+.cost_top_box select {
+	width: 150px;
+	height: 35px;
+	margin-left: 20px;
+	border: 1px solid #aeaeae;
+}
+
+.cost_pol_box {
+	margin-bottom: 10px;
+}
+
+.cost_pol_box label {
+	margin-right: 10px;
+}
+
+.cost_top_box .cost_message {
+	color: #aaa;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.cost_freight_box {
+	float: left;
+	margin-left: 20px;
+}
+
+.cost_list {
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+.checkboxFive {
+	position: relative;
+	float: left;
+	width: 80px;
+}
+
+.checkboxFive label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+	left: 0;
+	background: #eee;
+	border: 1px solid #ddd;
+}
+
+.checkboxFive label:after {
+	opacity: 0;
+	filter:alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 6px;
+	left: 7px;
+	border: 3px solid #333;
+	border-top: none;
+	border-right: none;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.checkboxFive label:hover::after {
+	opacity: 0;
+	filter:alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+}
+
+.checkboxFive input[type=checkbox]:checked + label:after {
+	opacity: 1;
+	filter:alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+}
+
+.checkboxFive span {
+	line-height: 27px;
+	padding-left: 10px;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+.freight_usd {
+	float: left;
+	margin: 0 50px 0 60px;
+	font-size: 14px;
+}
+
+.freight_usd label {
+	margin-right: 10px;
+}
+
+.freight_usd input {
+	width: 130px;
+	height: 30px;
+	border: 1px solid #aeaeae;
+	font-size: 16px;
+	text-indent: 10px;
+}
+
+.cost_num {
+	float: right;
+	margin-left: 20px;
+	font-size: 14px;
+	line-height: 27px;
+}
+
+.cost_num .num_input {
+	width: 100px;
+	height: 30px;
+	border: 1px solid #aeaeae;
+	font-size: 16px;
+	display: inline-block;
+	text-indent: 10px;
+}
+
+.num_minus {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid #aeaeae;
+	background-color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	color: #666;
+	text-align: center;
+}
+
+.num_add {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid #aeaeae;
+	background-color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	color: #666;
+	text-align: center;
+}
+
+.num_add:hover,
+num_minus:hover {
+	border-color: #3361b1;
+	color: #3361b1;
+}
+
+.total_box {
+	background-color: #EAF0F9;
+	border: 1px solid #dedede;
+	border-top: 0;
+	text-align: center;
+	padding: 20px 0;
+	position:relative
+}
+
+.cost-booking{
+	position:absolute;
+	right:1%;
+	top:30%;
+}
+
+.num_total {
+	font-size: 35px;
+	color: #d44027;
+}
+
+.cost_table {
+	border-collapse: collapse;
+	border: 1px solid #DEDEDE;
+	margin-top: 10px;
+}
+
+.cost_table td,
+.cost_table th {
+	border-collapse: collapse;
+	border: 1px solid #DEDEDE;
+	padding: 8px 0;
+	text-align: center;
+}
+
+.cost_table thead tr {
+	background-color: #EAF0F9;
+}
+
+.cost_table_cny {
+	height: 30px;
+	border: 1px solid #aeaeae;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+
+.charge-input {
+	width: 90px;
+	border: 1px solid #ddd;
+	text-indent: 10px;
+	line-height: 26px;
+}
+
+.charge-currcode {
+	line-height: 26px;
+	width: 45px;
+}
+/*
+	成本核算结束
+ */
+.filters {
+	z-index: -100;
+}
+
+.filter {
+	position: relative;
+	background-color: #fff;
+	border-width: 0 1px 1px;
+	border-style: solid solid dotted;
+	border-color: #e6e2e1 #e6e2e1 #d1ccc7;
+}
+
+.fil-key {
+	color: #b0a59f;
+	float: left;
+	padding: 7px 0 0;
+	text-indent: 13px;
+	font-size: 12px;
+	width: 10%;
+}
+
+.fil-values {
+	background-color: #fff;
+	float: left;
+	overflow: hidden;
+	padding: 4px 10px;
+	position: relative;
+	width: 90%;
+}
+
+.fil-more {
+	position: absolute;
+	right: 0;
+	top: 2px;
+	width: 60px;
+	z-index: 1;
+}
+
+.fil-more a {
+	color: #999;
+	cursor: pointer;
+	height: 25px;
+	line-height: 25px;
+}
+
+.fil-values .cate-all {
+	float: left;
+	display: block;
+	color: #666;
+	height: 25px;
+	line-height: 25px;
+	padding: 0px 8px;
+	margin-right: 20px;
+	color: #806f66;
+}
+
+.cate-all.active {
+	background-color: #6294d8;
+	color: #fff;
+}
+
+.fil-values .cate-div {
+	float: left;
+	height: auto;
+	width: 910px;
+}
+
+.cate-ul {
+	width: 100%;
+	height: 30px;
+	overflow: hidden;
+}
+
+.cate-ul li {
+	display: block;
+	margin: 0 5px 5px 0;
+	overflow: hidden;
+	width: 100px;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+}
+
+.cate-ul.len li {
+	width: 160px;
+}
+
+.cate-ul li label span {
+	display: inline-block;
+	vertical-align: middle;
+	color: #666;
+}
+
+.cate-ul li a {
+	color: #646464;
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	padding: 0px 12px;
+	position: relative;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.cate-ul li a:hover {
+	color: #F60;
+}
+
+.cate-ul li.active a {
+	background-color: #6294d8;
+	color: #fff;
+}
+
+.cate-abc {
+	margin-bottom: 8px;
+	font-size: 12px;
+}
+
+.cate-abc a {
+	color: #806f66;
+	border-bottom: 2px solid #eee;
+	margin: 0;
+	line-height: 28px;
+	padding: 0 10px;
+	transition: border 1s ease,color 1s ease;
+}
+
+.cate-abc a.active,
+.cate-abc a:hover {
+	border-bottom: 2px solid #1b9af7;
+	color: #1b9af7;
+}
+/* atrr */
+.attrs {
+	border-bottom: 2px solid #1b9af7;
+	margin-top: 10px;
+	position: relative;
+	background-color: #f8f8f8;
+	padding: 5px 10px;
+}
+
+.attr-total {
+	float: left;
+	margin-right: 20px;
+}
+
+.attr-total span {
+	color: #ff830b;
+}
+
+.attr-key {
+	float: left;
+	width: 10%;
+	text-indent: 13px;
+}
+
+.attr-values {
+	float: left;
+	width: 75%;
+}
+
+.attr-remove {
+	float: left;
+	width: 15%;
+	text-align: right;
+}
+
+.attr-remove a {}
+
+.attr-list {
+	width: 100%;
+	height: auto;
+	max-height: 100px;
+	overflow: hidden;
+}
+
+.attr-list li {
+	cursor: pointer;
+	display: block;
+	margin: 0 5px 8px 0;
+	overflow: hidden;
+	float: left;
+	padding: 2px 5px;
+	font-size: 12px;
+	height: 25px;
+	line-height: 20px;
+	border: 1px dotted #d9534f;
+	border-radius: 2px;
+}
+
+.attr-list li a {
+	color: #999;
+	line-height: 20px;
+}
+
+.attr-list li a strong {
+	color: #d9534f;
+}
+
+.attr-list li:hover {
+	border: 1px solid #d9534f;
+}
+
+.attr-list li:hover a i {
+	color: #d9534f;
+}

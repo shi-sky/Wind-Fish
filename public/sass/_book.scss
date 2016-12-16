@@ -1,0 +1,120 @@
+/*
+	订舱开始
+*/
+.booking-table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 10px;
+	box-sizing:content-box;
+	
+	td {
+		line-height: 1.42857143;
+		border: 1px solid #ddd;
+		padding: 8px;
+
+		input {
+			width: 100%;
+			height: 100%;
+			border: none;
+			outline: medium;
+		}
+
+		textarea {
+			width: 100%;
+			height: 100%;
+			border: none;
+			outline: medium;
+			resize:none;
+		}
+		&.jmt{
+			padding:0px;
+			margin: 0px;
+			box-sizing:content-box;
+			table{
+				height: 100%;
+				width: 100%;
+				td{
+					line-height:40px;
+						input{
+							width:100%;
+							line-height:35px;
+						}
+
+				}
+			}
+		}
+		.jmt-box {
+			overflow: hidden;
+			border-bottom: 1px solid #ddd;
+			div {
+					float: left;
+					height:35px;
+					width: 50%;
+					overflow: hidden;
+					&.left-input {
+							width: 50%;
+					}
+			}
+			.left-input label{
+					display:block;
+					float: left;
+					background-color:#efefef;
+					width: 25%;
+					height:35px;
+			}
+			.left-input input {
+				padding-left: 10px;
+
+				width: 70%;
+				line-height: 35px;
+			}
+		}
+
+		>ul>li {
+			display: inline-block;
+			margin-right: 20px;
+			width:130px;
+			margin-top:5px;
+			
+
+			input {
+				width: 30px;
+			}
+		}
+	}
+
+	td.tdbg {
+		background-color: #efefef;
+	}
+
+	.booking-fontEn {
+		font-size: 14px;
+		color: #323232;
+	}
+
+	.booking-fontCn {
+		font-size: 14px;
+		color: #828ea1;
+	}
+}
+.service-column{
+	padding: 10px 0;
+	label{
+		margin-left: 8px;
+		vertical-align:middle;
+	}
+
+}
+.total-amount-box {
+	border: 1px solid #ddd;
+	overflow: hidden;
+	padding: 20px;
+	font-size: 22px;
+
+	button {
+		font-size: 14px;
+	}
+}
+/*
+	订舱结束
+*/

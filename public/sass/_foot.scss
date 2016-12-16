@@ -1,0 +1,186 @@
+.index-footer {
+	text-align: center;
+}
+
+.index-footer ul li {
+	font-size: 12px;
+	display: inline;
+	margin: 0 15px;
+	color: #eaeaea;
+}
+
+.index-footer ul li:hover {
+	color: #fff;
+}
+
+.index-footer p {
+	margin-top: 10px;
+	color: #eaeaea;
+	text-align: center;
+}
+
+.footer{
+	text-align: center;
+	background-color: #2f2f2f;
+	padding-top:15px;
+}
+
+.footer ul li {
+	display: inline;
+	font-size: 12px;
+	margin: 0 10px;
+	color:#eee;
+}
+
+.footer ul li:hover{
+	color:#f60;
+}
+
+.footer ul a {
+	color:#eee;
+}
+
+.footer p {
+	font-size: 13px;
+	padding:10px 0 10px 0;
+	text-align: center;
+	color:#eee;
+}
+/*
+	右侧运价对比开始
+ */
+.fixed_icon {
+	position: fixed;
+	_position: absolute;
+	top: 150px;
+	right: 10px;
+	z-index: 999999;
+}
+
+.fixed_icon_ul {
+	position: relative;
+}
+
+.fixed_icon_ul li {
+	padding: 4px;
+	text-align: center;
+	font-size: 12px;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+
+.go_contras {
+	border: 1px solid #dee4e9;
+	background: #fff;
+	color: #333;
+}
+
+.go_top {
+	border: 1px solid #6294d8;
+	background: #6294d8;
+	display: none;
+	color: #fff;
+}
+
+.contras_box {
+	position: absolute;
+	left: -198px;
+	top: 0;
+	width: 198px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	background: #fff;
+	text-align: center;
+}
+
+.contras_box h5 {
+	font-size: 12px;
+	background-color: #6294d8;
+	line-height: 35px;
+	color: #fff;
+	padding-left: 10px;
+	text-align: left;
+	margin: 0;
+}
+
+.contras_box h5 i {
+	display: block;
+	float: right;
+	margin-right: 10px;
+}
+
+.contras_box table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.contras_box table tr {
+	border-bottom: 1px #ddd dashed;
+}
+
+.contras_box table tr td {
+	font-size: 13px;
+	text-align: center;
+	padding: 8px 2px;
+}
+
+.contras_box button {
+	padding: 6px 12px;
+	background-color: #f60;
+	margin: 10px 0;
+	cursor: pointer;
+	color: #fff;
+}
+
+.contras_box button:hover {
+	background-color: #E35B00;
+}
+
+.contras_box .ship {
+	text-align: left;
+	padding-left: 10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 130px;
+	float: left;
+}
+
+.contras_box a.cancel {}
+
+.contras_box a.cancel:hover {
+	color: #ff6600;
+}
+/*
+	右侧运价对比结束
+ */
+/*
+	运价对比开始
+ */
+table.feight_db {
+	border-collapse: collapse;
+	/* 边框合并属性  */
+	margin-bottom: 30px;
+}
+
+table.feight_db thead tr th {
+	background-color: #EAF0F9;
+	padding: 8px 0;
+	color: #666;
+	text-align: right;
+	padding-right: 30px;
+	font-size: 14px;
+	font-weight: 500;
+	border: 1px solid #DEDEDE;
+}
+
+table.feight_db thead tr td {
+	padding: 8px 0;
+	color: #666;
+	text-align: center;
+	font-size: 14px;
+	border: 1px solid #DEDEDE;
+}
+/*
+	运价对比结束
+ */
